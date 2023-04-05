@@ -202,7 +202,7 @@ local MethodsAutoTableUI = {
 }
 setmetatable(UITab, MethodsAutoTableUI);
 
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/KangKung02/LinoriaLib/main/Library.lua"))();
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/KAKXHUB/Library/main/README.md"))();
 Ui_Configs["FirstOnChanged"] = false;
 local Windows = Library:CreateWindow(string.format("Krypton %s - %s", "Premium", Global_V.Version_script));
 
