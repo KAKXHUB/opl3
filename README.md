@@ -64,6 +64,8 @@ Tab3:AddToggle({
 	end    
 })
 
+["ListOfBox"] = {"Common Box", "Uncommon Box", "Rare Box", "Ultra Rare Box"};
+
 spawn(function()
     while wait() do
         pcall(function()
