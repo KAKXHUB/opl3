@@ -181,24 +181,10 @@ Tab:AddToggle({
 	end    
 })
 
-spawn(function()
-    while wait() do
-        pcall(function()
-            if not ViewPlayer then return end;
-            for _, Value in pairs(game.Players:GetChildren()) do
-                if not ViewPlayer then return end;
-                if Select[Value.Name] and Value.Character:FindFirstChild("HumanoidRootPart") and Value.Character:FindFirstChild("Humanoid") and Value.Character.Humanoid.Health > 0 then
-                    game.Workspace.CurrentCamera.CameraSubject = Value.Character.Humanoid;
-                    wait(3);
-                end;
-            end
-        end)
-    end
-end);
-
-ViewPlayer:OnChanged(function()
-    if not ViewPlayer then
+if ViewPlayer then
+game.Workspace.CurrentCamera.CameraSubject = game.Players[Select].Character.Humanoid;
+ if not ViewPlayer then
         game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid;
     end
-end)
+end
   
