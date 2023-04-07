@@ -349,7 +349,7 @@ Tab3:AddToggle({
 	Name = "Click On Screen",
 	Default = false,
 	Callback = function(COS)
-		ClickOnScreenEE = cos
+		ClickOnScreenEE = COS
 	end    
 })
 
@@ -361,6 +361,7 @@ spawn(function()
         end)
     end
 end);
+
 
 local Section = Tab3:AddSection({
 	Name = "Other"
