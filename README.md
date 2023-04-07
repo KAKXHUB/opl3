@@ -42,7 +42,7 @@ local Content = game.Players.LocalPlayer.Character.HumanoidRootPart.Position;
     
 
 game.Workspace.Spawns.Spawn1.CFrame = CFrame.new(Content)
-game.Workspace.Spawns.Spawn2.CFrame = CFrame.new(Content)
+game.Workspace.Spawns.Spawn2.CFrame = CFrame.new(Content)AutoRejounWhenDisconnect
 game.Workspace.Spawns.Spawn3.CFrame = CFrame.new(Content)
 game.Workspace.Spawns.Spawn4.CFrame = CFrame.new(Content)
 game.Workspace.Spawns.Spawn5.CFrame = CFrame.new(Content)
