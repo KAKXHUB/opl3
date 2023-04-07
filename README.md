@@ -328,22 +328,22 @@ local Section = Tab3:AddSection({
 	Name = "Auto Attack"
 })
 
-Tab3:AddToggle({
-	Name = "Auto Attack",
-	Default = false,
-	Callback = function(AT)
-		AuToAttackEE = AT
-	end    
-})
+--Tab3:AddToggle({
+--	Name = "Auto Attack",
+--	Default = false,
+--	Callback = function(AT)
+--		AuToAttackEE = AT
+--	end    
+--})
 
-spawn(function()
-    while wait() do
-        pcall(function()
-            if not AuToAttackEE then return end;
-            game:GetService("VirtualUser"):ClickButton1(Vector2.new(99999, 99999));
-        end)
-    end
-end);
+--spawn(function()
+--    while wait() do
+--        pcall(function()
+--            if not AuToAttackEE then return end;
+--            game:GetService("VirtualUser"):ClickButton1(Vector2.new(99999, 99999));
+--        end)
+--    end
+--end);
 
 Tab3:AddToggle({
 	Name = "Click On Screen",
