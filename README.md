@@ -73,7 +73,7 @@ game.Workspace.Spawns.Spawn10.CFrame = CFrame.new(-1281.5, 213.710159, -1353)
 })
 
 Tab:AddToggle({
-	Name = "Start Autodei",
+	Name = "Start Autodie",
 	Default = false,
 	Callback = function(Value)
 	AuTODie = Value 
@@ -110,9 +110,13 @@ local Section2 = Tab:AddSection({
 })
 
 Tab:AddButton({
-	Name = "TP",
+	Name = "Save Zone",
 	Callback = function()
-      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1558, 215, 9935);
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(100000, 3500, 80000));
+    local Base = Instance.new("Part", game.Workspace);
+    Base.Size = Vector3.new(50, 1, 50);
+    Base.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(0, -3, 0);
+    Base.Anchored = true;
   	end    
 })
 
@@ -320,3 +324,20 @@ spawn(function()
     end
 end)
 
+local Tab4 = Window:MakeTab({
+	Name = "Credit",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab4:AddSection({
+	Name = "by peet😎"
+})
+
+local Section = Tab4:AddSection({
+	Name = "พี่มาคกาก"
+})
+
+local Section = Tab4:AddSection({
+	Name = "พี่เตอร์แก่"
+})
