@@ -356,7 +356,7 @@ Tab3:AddToggle({
 spawn(function()
     while wait() do
         pcall(function()
-            if ClickOnScreenEE then return end;
+            if not ClickOnScreenEE then return end;
             game:GetService("VirtualUser"):ClickButton1(Vector2.new(99999, 99999));
         end)
     end
