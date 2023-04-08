@@ -53,7 +53,7 @@ Tab2:AddButton({
   	end    
 })
 
-Tab:AddToggle({
+Tab2:AddToggle({
 	Name = "Auto Drink",
 	Default = false,
 	Callback = function(ADK)
@@ -76,7 +76,7 @@ spawn(function()
     end
 end);
 
-Tab:AddToggle({
+Tab2:AddToggle({
 	Name = "Auto Drop Drink",
 	Default = false,
 	Callback = function(ADD)
