@@ -42,7 +42,7 @@ local GetingSkillArgumet = function(Arg1)
 end;
 
 
-print(GetingSkillArgumet)
+print(Arg1)
  
 
 
