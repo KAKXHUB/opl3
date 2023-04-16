@@ -5,7 +5,7 @@ local Select_Tagets = ;
 local Select_Bring_Monter = ;
 local Skill_Charge = 100;
 local Using_Spam_Skill = true;
-local Select_Key = C;
+local Select_Key = c;
 local Delay_Time = 0.1;
 
 
@@ -116,7 +116,7 @@ spawn(function()
     end
     while wait() do
         pcall(function()
-             if not Using_Spam_Skill == true or not game.Players.LocalPlayer.Character:FindFirstChild("Powers") or not game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") or not game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then return end;
+            if  Using_Spam_Skill == true then
             local KeyList = {"Z", "X", "C", "V", "B", "N"};
             local DevilFruit_Name;
             for Key in pairs(Select_Key) do
