@@ -116,7 +116,7 @@ spawn(function()
     end
     while wait() do
         pcall(function()
-            if not Using_Spam_Skill or not game.Players.LocalPlayer.Character:FindFirstChild("Powers") or not game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") or not game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then return end;
+             if not Using_Spam_Skill == true or not game.Players.LocalPlayer.Character:FindFirstChild("Powers") or not game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") or not game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then return end;
             local KeyList = {"Z", "X", "C", "V", "B", "N"};
             local DevilFruit_Name;
             for Key in pairs(Select_Key) do
