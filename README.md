@@ -25,7 +25,8 @@ Tab:AddToggle({
 	Name = "Start Spamskill",
 	Default = false,
 	Callback = function(STSPK)
-	Spamskill = STSPK  
+		Spamskill = STSPK
+	end    
 })
 
 spawn(function()
@@ -128,5 +129,8 @@ spawn(function()
         end)
     end
 end);
+
+
+
 
 
